@@ -4,9 +4,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
+      {/* <h1>hello world</h1>
       <h2>RUdra Dobariya</h2>
-      <p>Web Devlopment</p>
+      <p>Web Devlopment</p> */}
+      <p>hello bye</p>
     </div>
   );
 }
