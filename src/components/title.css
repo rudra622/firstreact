@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.title h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: brown;
+    text-align: center;
+}
+.gallary{
+    width: 1140px;
+    margin: 0 auto;
+}
+.gallary-card {
+    padding: 10px;
+    size: 33.33%;
+    display: flex;
+}
+.item img{
+    padding: 10px;
+    width: 100%;
+}
