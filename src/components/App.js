@@ -45,10 +45,10 @@ function App() {
         {
             id: 106,
             name: 'Phenytoin',
-            quantity: 63,
-            price: 250,
-            expiry: 2021,
-            status: false
+            quantity: 34,
+            price: 460,
+            expiry: 2026,
+            status: true
         }
     ];
     // return(
