@@ -7,7 +7,7 @@ class Theme extends React.Component{
         super();
         this.state={
             backgroundcolor : "red",
-            color : "black"
+            color : "white"
         }
     }
 
