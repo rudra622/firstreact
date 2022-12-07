@@ -19,7 +19,7 @@ class counter extends React.Component{
 
                         <div className="details">
                             <h1>
-                                Hello World ...
+                                Hello World ....
                                 
                             </h1>
                             <h5>

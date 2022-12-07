@@ -5,8 +5,8 @@ import './index.css';
 // import Gallary from './components/gallary';
 // import Title from './components/title';
 // import Header from './components/Header';
-// import Counter from './components/counter'
-import Theme from './components/Theme-bg';
+import Counter from './components/counter'
+// import Theme from './components/Theme-bg';
 
 
 
@@ -17,8 +17,8 @@ root.render(
         <Gallary/> */}
         {/* <Header logo="img/logo.png" dropdown="pages"/>
         <Header logo="img/logo1.webp" dropdown="Shop"/> */}
-        {/* <Counter/> */}
-        <Theme/>
+        <Counter/>
+        {/* <Theme/> */}
     </>
     // <App />
 );
