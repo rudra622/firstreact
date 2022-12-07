@@ -7,10 +7,12 @@ import './index.css';
 // import Header from './components/Header';
 // import Counter from './components/counter'
 import Theme from './components/Theme-bg';
+import Header from './components/Header';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const list =["Home","Service","Pages","Blog","Gallary","About Us","Contet Us"];
 root.render(
     <>
         {/* <Title/>
@@ -18,7 +20,8 @@ root.render(
         {/* <Header logo="img/logo.png" dropdown="pages"/>
         <Header logo="img/logo1.webp" dropdown="Shop"/> */}
         {/* <Counter/> */}
-        <Theme/>
+        {/* <Theme/> */}
+        <Header logo="img/logo.png" list={list}/>
     </>
     // <App />
 );
