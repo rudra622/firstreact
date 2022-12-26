@@ -8,7 +8,6 @@ const invalue = {
 }
 function TodoApp() {
     const [submitData, setSubmitData] = useState([])
-    const [todos, setTodos] = useState()
     const { values, handleBlur, handleChange, handleSubmit, touched, errors } = useFormik({
         initialValues: invalue,
         validationSchema: todoSchema,
@@ -21,18 +20,14 @@ function TodoApp() {
         }
     })
     const removeall = () => {
-        // console.log("ok");
         setSubmitData([])
     }
 
     const DeletItem = (id) => {
-        setTodos((submitData) => {
-
-            const newval = [...submitData].filter((i) => {
-                return i !== id
-            })
-            setSubmitData(newval)
+        let filterData = submitData.filter((d, i) =>{
+            return i !== id;
         })
+        setSubmitData(filterData);
     }
 
     // console.log(errors);
@@ -116,30 +111,34 @@ function TodoApp() {
                                         <div className="col-12">
                                             <button type="submit" className="btn btn-primary">Add</button>
                                         </div>
-                                        <div className="col-12">{
+                                        <div className="col-12">
+                                            {
                                             submitData.length > 1 ?
                                             <button type="button" onClick={removeall} className="btn btn-warning">Clear All</button> : ''}
                                         </div>
                                     </form>
+                                    <div>
+
                                     {
-                                        submitData.map((d, i) => {
+                                        submitData.map((data, i) => {
+                                            console.log(data, i);
+
                                             return (
-                                                <>
-                                                    <div className="row">
-                                                        <span className="col-4">
-                                                            {i + 1}
-                                                        </span><br />
-                                                        <span className="col-4" style={{ textAlign: "start" }}>
-                                                            {d.name}
-                                                        </span>
-                                                        <span className="col-4 text-align-center" style={{ textAlign: "end" }}   key={i} id={i}>
-                                                            <button type="button" onClick={() => {DeletItem('')}} className="btn btn-warning">clear</button>
-                                                        </span><br /><br /><hr />
-                                                    </div>
-                                                </>
+                                                <div className="row" key={i}>
+                                                    <span className="col-4">
+                                                           {i + 1}
+                                                         </span><br />
+                                                         <span className="col-4" style={{ textAlign: "start" }}>
+                                                             {data.name}
+                                                         </span>
+                                                         <span className="col-4 text-align-center" style={{ textAlign: "end" }}   key={i} id={i}>
+                                                             <button type="button" onClick={() => {DeletItem(i)}} className="btn btn-warning">clear</button>
+                                                         </span><br /><br /><hr />
+                                                </div>
                                             )
                                         })
                                     }
+                                    </div>
                                 </div>
                             </div>
                         </div>
