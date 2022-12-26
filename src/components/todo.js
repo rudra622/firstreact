@@ -96,8 +96,7 @@ function TodoApp() {
                                     <form className="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2" onSubmit={handleSubmit}>
                                         <div className="col-12">
                                             <div className="form-outline">
-                                                <input type="text" name="name" id="form1" className="form-control" value={values.name} onChange={handleChange} /*onChang={event=>{
-                                                    setCurrentInput(event.target.value);}}*/ onBlur={handleBlur} />
+                                                <input type="text" name="name" id="form1" className="form-control" value={values.name} onChange={handleChange}  onBlur={handleBlur} />
                                                 {
                                                     touched.name && errors.name ?
                                                         <span>
