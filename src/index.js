@@ -6,11 +6,11 @@ import 'bootstrap/dist/js/bootstrap';
 import {BrowserRouter} from 'react-router-dom';
 import { Route,Routes } from 'react-router-dom';
 // import Home from './components/header/pages/home/Home';
-// import Feature from './components/header/pages/feature/Feature';
 // import Features from './components/header/pages/feature/Feature';
 // import Addemployee from './components/addEmployee/Addemployee';
+// import Empview from './components/empview/Empview';
 // import View from './components/view/view';
-// import View from './components/header/pages/View';
+import View from './components/header/pages/View';
 
 // import App from './components/App';
 // import Header from './components/header/header';
@@ -22,8 +22,7 @@ import { Route,Routes } from 'react-router-dom';
 // import Title from './components/title';
 // import Header from './components/Header';
 // import Header from './components/header/header';
-// import Empview from './components/empview/Empview';
-// import Products from './components/header/pages/Products';
+import Products from './components/header/pages/Products';
 // import Counter from './components/counter'
 // import HOverCounter from './components/HOverCounter';
 // import CounterHook from './components/CounterHook';
@@ -43,18 +42,18 @@ root.render(
         <BrowserRouter>
             {/* <Header /> */}
             <Routes>
-                {/* <Route path='/' element={<Home/>}/>
-                <Route path='/Feature' element={<Features/>}/>
+                {/* <Route path='/' element={<Home/>}/> */}
+                {/* <Route path='/Feature' element={<Features/>}/>
                 <Route path='/Addemployee' element={<Addemployee/>}/>
                 <Route path='/Empview' element={<Empview/>}/> 
                 <Route path='/View' element={<View/>}/>  */}
                  {/* <Route path='/' element={<Card/>}/> 
                 <Route path='/view' element={<View/>}/> */}
                 {/* <Route path='*' element={<Error/>}/> */}
-                {/* <Route path='/' element={<Products/>}/> */}
+                <Route path='/' element={<Products/>}/>
             </Routes>
         </BrowserRouter>
-        <Crud/>
+        {/* <Crud/> */}
         {/* <Title/>
         <Gallary/> */}
         {/* <Header logo="img/logo.png" dropdown="pages"/>
